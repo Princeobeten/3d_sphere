@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: start;
+  padding: 2rem 4rem;
+  color: white;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  color: white;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -80%);
+  position: absolute;
+  font-size: 2rem;
+  z-index: 2;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 4rem 8rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  nav {
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .title {
+    font-size: 1.5rem;
+    top: 80%;
+    padding-bottom: 10px;
+  }
+}
